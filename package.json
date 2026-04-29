@@ -1,0 +1,30 @@
+{
+  "name": "reminderapp",
+  "version": "2.0.0",
+  "description": "Student Fee EMI and Birthday Reminder Application",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "moment": "^2.30.1",
+    "node-notifier": "^6.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.reminder.app",
+    "win": {
+      "target": "nsis",
+      "icon": "assets/icon.ico"
+    }
+  }
+}
